@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/mainActivity_navigationTabLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mainActivity_historyTabTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="История" />
+
+        <TextView
+            android:id="@+id/mainActivity_translatorTabTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="Перевод" />
+
+        <TextView
+            android:id="@+id/mainActivity_favouritesTabTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="Избранное" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainActivity_mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainActivity_navigationTabLinearLayout"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/historyListItem_directionTextView"
+        android:layout_toEndOf="@+id/historyListItem_directionTextView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/historyListItem_fromTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            tools:text="word"/>
+
+        <TextView
+            android:id="@+id/historyListItem_toTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="15sp"
+            tools:text="Слово" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/historyListItem_directionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@android:color/holo_red_dark"
+        tools:text="EN - RU"
+        tools:ignore="RelativeOverlap" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/black" />
+
+</RelativeLayout>
